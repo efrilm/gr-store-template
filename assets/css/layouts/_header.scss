@@ -1,0 +1,7 @@
+@use '../utils' as *;
+
+.header {
+    border-bottom: 1px solid $border;
+    border-color: rgba(255, 255, 255, .1);
+    background-color: $blue;
+}
