@@ -1,0 +1,24 @@
+@use '../utils' as *;
+
+.side-border {
+    position: relative;
+
+    &::before {
+        @media #{$xl} {
+            right: 30px;
+        }
+
+        @media #{$lg} {
+            right: 15px;
+        }
+
+        position: absolute;
+        content: '';
+        background: $white;
+        width: 1px;
+        height: 18px;
+        opacity: .2;
+        right: 60px;
+        top: 18px;
+    }
+}

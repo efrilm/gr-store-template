@@ -121,3 +121,29 @@ button:focus {
     outline: 0;
     border: 0;
 }
+
+.body-overlay {
+    background-color: rgba($color: #000000, $alpha: .5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fix {
+    overflow: hidden
+}
+
+.body-overlay.opened {
+    opacity: 1;
+    visibility: visible;
+}
