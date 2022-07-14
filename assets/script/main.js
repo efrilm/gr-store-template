@@ -32,4 +32,18 @@
         $(".offcanvas-area").removeClass("opened");
         $(".body-overlay").removeClass("opened");
     });
+
+    $('.slick-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2500,
+        infinity: true,
+        dots: true,
+        arrows: false,
+        fade: true,
+        cssEase: 'Linear',
+        speed: 500,
+        appendDots: $('.slick-custom-dots'),
+    });
 })(jQuery);
+
+

@@ -144,6 +144,10 @@ button:focus {
   visibility: visible;
 }
 
+.page-home {
+  margin-top: 20px;
+}
+
 .side-border {
   position: relative;
 }
@@ -788,4 +792,45 @@ button:focus {
     font-size: 12px;
     font-weight: 500;
   }
+}
+
+.gr-carousel {
+  max-height: 200px;
+}
+.gr-carousel .slick-carousel {
+  margin: 0 auto;
+  height: 500;
+}
+.gr-carousel .slick-carousel .slick-slide img {
+  border-radius: 20px;
+}
+.gr-carousel .slick-custom-dots {
+  position: relative;
+  bottom: 20px;
+  left: 90%;
+  display: flex;
+}
+.gr-carousel .slick-custom-dots ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gr-carousel .slick-custom-dots ul li {
+  margin: 0 4px;
+}
+.gr-carousel .slick-custom-dots ul li button {
+  background: gray;
+  height: 8px;
+  width: 8px;
+  overflow: hidden;
+  color: grey;
+  border: none;
+  border-radius: 4px;
+}
+.gr-carousel .slick-custom-dots ul li.slick-active button {
+  height: 8px;
+  width: 30px;
+  background: #263C97;
+  color: #263C97;
 }/*# sourceMappingURL=main.css.map */

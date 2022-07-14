@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GR Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/assets/vendor/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="/assets/vendor/flaticon/flaticon.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="/assets/vendor/mean-menu/css/meanmenu.css">
+    <link rel="stylesheet" href="/assets/vendor/slick/slick.css">
+    <!-- <link rel="stylesheet" href="/assets/vendor/slick/slick-theme.css"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
@@ -204,7 +207,6 @@
     </header>
     <!-- End Header -->
 
-
     <!-- offcanvas area start -->
     <div class="offcanvas-area">
         <div class="offcanvas-wrapper">
@@ -236,12 +238,44 @@
     <div class="body-overlay"></div>
     <!-- offcanvas area end -->
 
+    <!-- Page Content -->
+    <div class="page-content page-home">
+        <section class="gr-carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slick-carousel">
+                            <div>
+                                <img src="/assets/images/banner/banner_1.png" class="w-100">
+                            </div>
+                            <div>
+                                <img src="/assets/images/banner/banner_2.png" class="w-100">
+                            </div>
+                            <div>
+                                <img src="/assets/images/banner/banner_3.png" class="w-100">
+                            </div>
+                        </div>
+                        <div class="slick-custom-dots"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- End Page Content -->
+
     <script src="/assets/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/slick/slick.min.js"></script>
     <script src="/assets/vendor/jquery/waypoints.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="/assets/vendor/nice-select/js/nice-select.js"></script>
     <script src="/assets/vendor/mean-menu/js/meanmenu.js"></script>
     <script src="/assets/script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
