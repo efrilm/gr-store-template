@@ -1,7 +1,7 @@
 @use '../utils' as *;
 
 .gr-carousel {
-    max-height: 200px;
+    height: 300px;
 
     .slick-carousel {
         margin: 0 auto;
@@ -16,12 +16,58 @@
     }
 
     .slick-custom-dots {
-        position: relative;
-        bottom: 20px;
-        left: 90%;
-        // left: 100%;
-        // transform: translateX(-50%);
-        display: flex;
+        position: absolute;
+        bottom: 360px;
+        left: 50%;
+
+
+        @media #{$xxl} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 360px;
+            left: 50%;
+        }
+
+        @media #{$xl} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 410px;
+            left: 50%;
+        }
+
+        @media #{$lg} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 450px;
+            left: 50%;
+        }
+
+        @media #{$md} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 480px;
+            left: 50%;
+        }
+
+        @media #{$sm} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 540px;
+            left: 50%;
+        }
+
+        @media #{$xs} {
+            position: absolute;
+            transform: translateX(-50%);
+            display: flex;
+            bottom: 530px;
+            left: 50%;
+        }
 
         ul {
             display: flex;
@@ -40,6 +86,16 @@
                     color: grey;
                     border: none;
                     border-radius: 4px;
+
+                    @media #{$sm} {
+                        height: 6px;
+                        width: 6px;
+                    }
+
+                    @media #{$xs} {
+                        height: 4px;
+                        width: 4px;
+                    }
                 }
 
                 &.slick-active {
@@ -48,6 +104,16 @@
                         width: 30px;
                         background: $blue;
                         color: $blue;
+
+                        @media #{$sm} {
+                            height: 6px;
+                            width: 20px;
+                        }
+
+                        @media #{$xs} {
+                            height: 4px;
+                            width: 15px;
+                        }
                     }
                 }
             }

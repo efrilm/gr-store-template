@@ -795,7 +795,7 @@ button:focus {
 }
 
 .gr-carousel {
-  max-height: 200px;
+  height: 300px;
 }
 .gr-carousel .slick-carousel {
   margin: 0 auto;
@@ -805,10 +805,63 @@ button:focus {
   border-radius: 20px;
 }
 .gr-carousel .slick-custom-dots {
-  position: relative;
-  bottom: 20px;
-  left: 90%;
-  display: flex;
+  position: absolute;
+  bottom: 360px;
+  left: 50%;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 360px;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 410px;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 450px;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 480px;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 540px;
+    left: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .gr-carousel .slick-custom-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 530px;
+    left: 50%;
+  }
 }
 .gr-carousel .slick-custom-dots ul {
   display: flex;
@@ -828,9 +881,33 @@ button:focus {
   border: none;
   border-radius: 4px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .gr-carousel .slick-custom-dots ul li button {
+    height: 6px;
+    width: 6px;
+  }
+}
+@media (max-width: 575px) {
+  .gr-carousel .slick-custom-dots ul li button {
+    height: 4px;
+    width: 4px;
+  }
+}
 .gr-carousel .slick-custom-dots ul li.slick-active button {
   height: 8px;
   width: 30px;
   background: #263C97;
   color: #263C97;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .gr-carousel .slick-custom-dots ul li.slick-active button {
+    height: 6px;
+    width: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .gr-carousel .slick-custom-dots ul li.slick-active button {
+    height: 4px;
+    width: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
