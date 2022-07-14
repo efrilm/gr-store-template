@@ -362,9 +362,14 @@ button:focus {
   max-width: 180px;
   padding: 5px 0;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header .header-central .header-logo .logo-image img {
-    max-width: 200px;
+    max-width: 150px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .header .header-central .header-logo .logo-image img {
+    max-width: 150px;
   }
 }
 @media (max-width: 575px) {
@@ -382,6 +387,16 @@ button:focus {
 .header .header-central .header-inner .header-search {
   width: 100%;
   position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header .header-central .header-inner .header-search {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .header-central .header-inner .header-search {
+    margin-left: 50px;
+  }
 }
 .header .header-central .header-inner .header-search .search-input {
   width: 100%;
@@ -483,7 +498,7 @@ button:focus {
   align-items: center;
   margin-left: 60px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 575px) and (max-width: 767px) {
   .header .header-central .header-inner .header-action {
     margin-left: 20px;
   }
@@ -514,9 +529,9 @@ button:focus {
     margin-right: 5px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 575px) and (max-width: 767px) {
   .header .header-central .header-inner .header-action .icon-block i {
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 5px;
   }
 }
@@ -526,9 +541,9 @@ button:focus {
   display: block;
   color: #ffffff;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 575px) and (max-width: 767px) {
   .header .header-central .header-inner .header-action .icon-block span {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 .header .header-central .header-inner .header-action .icon-block span .sub {
@@ -547,7 +562,7 @@ button:focus {
 .header .header-central .header-inner .header-action .btn-sell i {
   padding-right: 10px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 575px) and (max-width: 767px), (max-width: 575px) {
   .header .header-bottom {
     padding: 15px 0;
   }
@@ -791,123 +806,5 @@ button:focus {
   .header .header-bottom .promo-text p {
     font-size: 12px;
     font-weight: 500;
-  }
-}
-
-.gr-carousel {
-  height: 300px;
-}
-.gr-carousel .slick-carousel {
-  margin: 0 auto;
-  height: 500;
-}
-.gr-carousel .slick-carousel .slick-slide img {
-  border-radius: 20px;
-}
-.gr-carousel .slick-custom-dots {
-  position: absolute;
-  bottom: 360px;
-  left: 50%;
-}
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 360px;
-    left: 50%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 410px;
-    left: 50%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 450px;
-    left: 50%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 480px;
-    left: 50%;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 540px;
-    left: 50%;
-  }
-}
-@media (max-width: 575px) {
-  .gr-carousel .slick-custom-dots {
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex;
-    bottom: 530px;
-    left: 50%;
-  }
-}
-.gr-carousel .slick-custom-dots ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.gr-carousel .slick-custom-dots ul li {
-  margin: 0 4px;
-}
-.gr-carousel .slick-custom-dots ul li button {
-  background: gray;
-  height: 8px;
-  width: 8px;
-  overflow: hidden;
-  color: grey;
-  border: none;
-  border-radius: 4px;
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .gr-carousel .slick-custom-dots ul li button {
-    height: 6px;
-    width: 6px;
-  }
-}
-@media (max-width: 575px) {
-  .gr-carousel .slick-custom-dots ul li button {
-    height: 4px;
-    width: 4px;
-  }
-}
-.gr-carousel .slick-custom-dots ul li.slick-active button {
-  height: 8px;
-  width: 30px;
-  background: #263C97;
-  color: #263C97;
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .gr-carousel .slick-custom-dots ul li.slick-active button {
-    height: 6px;
-    width: 20px;
-  }
-}
-@media (max-width: 575px) {
-  .gr-carousel .slick-custom-dots ul li.slick-active button {
-    height: 4px;
-    width: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
