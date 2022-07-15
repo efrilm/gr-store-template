@@ -807,4 +807,48 @@ button:focus {
     font-size: 12px;
     font-weight: 500;
   }
+}
+
+.gr-carousel .carousel .carousel-inner img {
+  border-radius: 20px;
+}
+.gr-carousel .carousel .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  /* change width */
+  height: 10px;
+  /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: opacity 0.6s ease;
+  border-radius: 100%;
+}
+.gr-carousel .carousel .carousel-indicators .active {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  /* change width */
+  height: 10px;
+  /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #263C97;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: opacity 0.6s ease;
+  border-radius: 100%;
 }/*# sourceMappingURL=main.css.map */
