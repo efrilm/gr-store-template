@@ -1,0 +1,28 @@
+@use '../utils' as *;
+
+
+.slick-arrow {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    top: -90px;
+    right: 16px;
+
+    &:hover {
+        color: $blue;
+        border: 1px solid $blue;
+    }
+
+    &.product-slick-prev {
+        right: 51px;
+    }
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/vendor/flaticon/flaticon.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="/assets/vendor/mean-menu/css/meanmenu.css">
+    <link rel="stylesheet" href="/assets/vendor/slick/css/slick.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
@@ -233,6 +234,10 @@
         </div>
     </div>
 
+    <!-- offcanvas area end -->
+    <div class="body-overlay"></div>
+    <!-- offcanvas area end -->
+
     <main class="page-content page-home">
         <!-- Carousel -->
         <section class="gr-carousel">
@@ -267,26 +272,979 @@
         <!-- End Carousel -->
 
         <!-- Product Popular -->
-        <section class="product-popular">
+        <section class="product-populars">
             <div class="container">
-                <!-- title -->
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-6 col-6">
-                        <h1 class="title">Product Populars</h1>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 text-end">
-                        <a href="/product.html" class="subtitle text-right">View More</a>
+                    <div class="col-xl-12">
+                        <div class="title">
+                            <h3>Product Populars</h3>
+                        </div>
                     </div>
                 </div>
-                <!-- End Title -->
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="product-active">
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/bmw-m4.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">BMW M4 2020</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Sport Car</span>
+                                            <h6><a href="product-details.html">BMW M4 2020</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/civic.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">Civic Rs</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Car</span>
+                                            <h6><a href="product-details.html">Civic Rs</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/house-1.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">Alexandra Residence</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2 Units</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Real Estate</span>
+                                            <h6><a href="product-details.html">Alexandra Residence</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/bmw-m2.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">BMW M2</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Sport Car</span>
+                                            <h6><a href="product-details.html">BMW M2</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/house-2.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">G & A Real Estate</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Real Estate</span>
+                                            <h6><a href="product-details.html">G & A Real Estate</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/nissan-gtr.jpg" height="270px" width="270px"
+                                        alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">Nissan GTR</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Sport Car</span>
+                                            <h6><a href="product-details.html">Nissan GTR</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/skyline.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">Nissan Skyline</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Sport Car</span>
+                                            <h6><a href="product-details.html">Nissan Skyline</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/house-4.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">Johan Scruff Housing</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Real Estate</span>
+                                            <h6><a href="product-details.html">Johan Scruff Housing</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="product-wrapper">
+                                <div class="product-img">
+                                    <img src="/assets/images/products/house-5.jpg" height="270px" width="270px" alt="">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flip-box">
+                                    <div class="product-details">
+                                        <span>Residence</span>
+                                        <h6><a href="product-details.html">No More Residence</a></h6>
+                                        <div class="price-color">
+                                            <div class="price d-inline-block">
+                                                <span>$100</span>
+                                                <del>$120</del>
+                                            </div>
+                                            <div class="item float-end">
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details product-details-2">
+                                        <div class="product-info">
+                                            <span>Residence</span>
+                                            <h6><a href="product-details.html">No More Residence</a></h6>
+                                        </div>
+                                        <div class="buy-info">
+                                            <div class="buy float-start">
+                                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                            </div>
+                                            <ul class="rating d-flex">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End Product Popular -->
+
+        <!-- Recommended Product -->
+        <section class="product-recommended">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title">
+                            <h3> New Products Recommended </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="subtitle float-end">
+                            View More
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/bmw-m4.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Sport Car</span>
+                                    <h6><a href="product-details.html">BMW M4 2020</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">BMW M4 2020</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/civic.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Sport Car</span>
+                                    <h6><a href="product-details.html">Civic Rs</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Car</span>
+                                        <h6><a href="product-details.html">Civic Rs</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/house-1.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Real Estate</span>
+                                    <h6><a href="product-details.html">Alexandra Residence</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2 Units</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">Alexandra Residence</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/bmw-m2.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Sport Car</span>
+                                    <h6><a href="product-details.html">BMW M2</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">BMW M2</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/house-2.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Real Estate</span>
+                                    <h6><a href="product-details.html">G & A Real Estate</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">G & A Real Estate</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/nissan-gtr.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Sport Car</span>
+                                    <h6><a href="product-details.html">Nissan GTR</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">Nissan GTR</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/skyline.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Sport Car</span>
+                                    <h6><a href="product-details.html">Nissan Skyline</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Sport Car</span>
+                                        <h6><a href="product-details.html">Nissan Skyline</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/house-4.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Real Estate</span>
+                                    <h6><a href="product-details.html">Johan Scruff Housing</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Real Estate</span>
+                                        <h6><a href="product-details.html">Johan Scruff Housing</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/products/house-5.jpg" height="270px" width="270px" alt="">
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flip-box">
+                                <div class="product-details">
+                                    <span>Residence</span>
+                                    <h6><a href="product-details.html">No More Residence</a></h6>
+                                    <div class="price-color">
+                                        <div class="price d-inline-block">
+                                            <span>$100</span>
+                                            <del>$120</del>
+                                        </div>
+                                        <div class="item float-end">
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details product-details-2">
+                                    <div class="product-info">
+                                        <span>Residence</span>
+                                        <h6><a href="product-details.html">No More Residence</a></h6>
+                                    </div>
+                                    <div class="buy-info">
+                                        <div class="buy float-start">
+                                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                                        </div>
+                                        <ul class="rating d-flex">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <button class="btn-primary">Load More</button>
+                </div>
+            </div>
+        </section>
+        <!-- end Recommended Product -->
     </main>
 
-    <!-- offcanvas area end -->
-    <div class="body-overlay"></div>
-    <!-- offcanvas area end -->
+    <footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_1">GR Store</h3>
+                    <div class="collapse dont-collapse-sm links" id="collapse_1">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="help.html">Customer Service</a></li>
+                            <li><a href="contact.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_2">Categories</h3>
+                    <div class="collapse dont-collapse-sm links" id="collapse_2">
+                        <ul>
+                            <li><a href="#">New Car</a></li>
+                            <li><a href="#">Second Car</a></li>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_3">Contacts</h3>
+                    <div class="collapse data-collapse-sm links" id="collapse_3">
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Tb Simatupang No. 34<br>
+                                Jakarta Selatan - Indonesia</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>+62 812 0000 1111</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>info@grstore.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_4">Keep in touch</h3>
+                    <div class="collapse dont-collapse-sm" id="collapse_4">
+                        <div id="newsletter">
+                            <div class="form-group">
+                                <input type="email" name="email_newsletter" id="email_newsletter" class="form-control"
+                                    placeholder="Your email">
+                                <button type="submit" id="submit-newsletter"><i
+                                        class="ti-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="follow_us">
+                            <h5>Follow Us</h5>
+                            <ul>
+                                <li><a href="#0"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                            data-src="img/twitter_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                            data-src="img/facebook_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                            data-src="img/instagram_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                            data-src="img/youtube_icon.svg" alt="" class="lazy"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row add_bottom_25">
+                <div class="col-lg-6">
+                    <ul class="footer-selector clearfix">
+                        <li>
+                            <div class="styled-select lag-selector">
+                                <select>
+                                    <option value="en" selected>English</option>
+                                    <option value="id" selected>Indonesian</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="additional_links">
+                        <li><a href="#0">Terms and conditions</a></li>
+                        <li><a href="#0">Privacy</a></li>
+                        <li><span>© 2021 Allaia</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 
@@ -295,6 +1253,7 @@
     <script src="/assets/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="/assets/vendor/nice-select/js/nice-select.js"></script>
     <script src="/assets/vendor/mean-menu/js/meanmenu.js"></script>
+    <script src="/assets/vendor/slick/js/slick.min.js"></script>
     <script src="/assets/script/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -33,6 +33,45 @@
         $(".body-overlay").removeClass("opened");
     });
 
+
+    $('.product-active').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        prevArrow: '<a class="product-slick-prev"><i class="fa fa-angle-left"></i></a>',
+        nextArrow: '<a class="product-slick-next"><i class="fa fa-angle-right"></i"</a>',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false
+            }
+        },
+
+        {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+
+            }
+        },
+        ]
+    });
 })(jQuery);
 
 
