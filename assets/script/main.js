@@ -34,6 +34,7 @@
     });
 
 
+    // Products
     $('.product-active').slick({
         dots: false,
         arrows: true,
@@ -72,6 +73,7 @@
         },
         ]
     });
+
 })(jQuery);
 
 

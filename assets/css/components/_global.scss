@@ -14,6 +14,7 @@ body {
     font-weight: normal;
     color: $grey;
     line-height: 26px;
+    margin: 0;
 }
 
 a {
@@ -140,7 +141,7 @@ button:focus {
 }
 
 .fix {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .body-overlay.opened {
@@ -148,9 +149,14 @@ button:focus {
     visibility: visible;
 }
 
+
+
+
 .page-home {
     margin-top: 20px;
 }
+
+
 
 .title {
     h3 {

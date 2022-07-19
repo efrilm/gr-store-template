@@ -4,6 +4,7 @@
 		content: '';
 	}
 
+	$medium-device-width: 991px; // 
 	$small-device-width: 767px;
 
 
@@ -70,6 +71,12 @@
 
 	@mixin mobile {
 		@media (max-width: #{$small-device-width}) {
+			@content;
+		}
+	}
+
+	@mixin tablet {
+		@media (max-width: #{$medium-device-width}) {
 			@content;
 		}
 	}

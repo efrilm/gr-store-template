@@ -1,21 +1,113 @@
 @use '../utils' as *;
 
 
-@media (min-width: 768px) {
-    .collapse.dont-collapse {
-        display: block !important;
-        height: auto !important;
-        visibility: visible !important;
-    }
-}
-
 footer {
-    background-color: $blue;
-    padding: 60px 0 35px 0;
-    margin-top: 30px;
 
-    @include mobile {
-        padding: 0 0 15px 0;
+
+
+    .footer-inner {
+        background: $blue;
+        padding-bottom: 40px;
+
+
+        .img-logo {
+            padding-top: 40px;
+
+            img {
+
+                width: 250px;
+            }
+        }
+
+        .description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            p {
+                color: $white;
+                word-break: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                line-height: 24px;
+                max-height: 70px;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .social-media {
+            a {
+                margin-right: 20px;
+                color: $white;
+
+                i {
+                    font-size: 24px;
+                }
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+
+        h3 {
+            padding-top: 40px;
+            color: $white;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        ul {
+            margin-top: 20px;
+
+
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    color: $grey2;
+
+                    &:hover {
+                        color: $brown;
+                    }
+                }
+            }
+        }
+
+        .contacts {
+            color: $grey2;
+            font-size: 16px;
+
+        }
+
+        .btn-sell {
+            margin-top: 30px;
+        }
     }
 
+    .footer-bot {
+        background-color: $darkBlue;
+        padding-top: 15px;
+
+        .copyright {
+            p {
+                color: $white;
+            }
+        }
+
+        .privacy {
+            a {
+                color: $grey2;
+                margin-left: 10PX;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
 }

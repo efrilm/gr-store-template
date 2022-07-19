@@ -1,15 +1,28 @@
 @use '../utils' as *;
 
 .btn-primary {
+    background: $blue;
     color: $white;
-    background-color: $blue;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 10px;
 
     &:hover {
         background-color: #0b1146;
+    }
+}
+
+.btn-sell {
+    background: $brown;
+    color: $white;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    i {
+        padding-right: 10px;
+    }
+
+    &:hover {
+        background: #723715;
     }
 }
